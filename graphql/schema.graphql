@@ -1,0 +1,10 @@
+type Query {
+  servers: [Server]!
+}
+
+type Server {
+  name: String!,
+  alive: Boolean!,
+  addr: String!,
+  port: Int!,
+}

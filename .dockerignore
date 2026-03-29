@@ -1,0 +1,34 @@
+# Dependencies
+node_modules
+
+# Build artifacts
+.next
+
+# Version control
+.git
+.gitignore
+
+# IDE
+.idea
+.ai
+
+# Environment files
+.env
+
+# Documentation
+README.md
+AGENTS.md
+CLAUDE.md
+
+# Editor configuration
+.editorconfig
+
+# Linting
+eslint.config.mjs
+
+# Other
+Rakefile
+Dockerfile
+graphql.config.yml
+next-env.d.ts
+next.config.ts

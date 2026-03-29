@@ -1,0 +1,9 @@
+schema: graphql/schema.graphql
+documents: "src/app/api/**/*.graphql"
+extensions:
+  endpoints:
+    local:
+      url: http://localhost:3000/api/v1/graphql
+    prod:
+      url: https://garage1340.org/api/v1/graphql
+

@@ -1,0 +1,21 @@
+### GraphQL Query
+GRAPHQL http://localhost:3000/api/v1/graphql
+
+query {
+  servers {
+    name
+    addr
+    alive
+  }
+}
+
+### GraphQL Query production
+GRAPHQL https://garage1340.club/api/v1/graphql
+
+query {
+  servers {
+    name
+    addr
+    alive
+  }
+}

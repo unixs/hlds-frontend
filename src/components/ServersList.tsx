@@ -22,7 +22,7 @@ function ServersList() {
 
     {serversList && (<ul>
       {serversList.servers.map((server: any) => {
-        return (<li key={server.addr + ":" + server.port}>
+        return (<li key={server.name}>
           <AliveBadge alive={server.alive} />
           &nbsp;
           {server.name} - <code>127.0.0.1:27015</code>

@@ -1,4 +1,5 @@
 import {QueryClient, environmentManager } from "@tanstack/react-query";
+import {clientENV} from "@/lib/env";
 
 // TypeScript only:
 declare global {
@@ -33,7 +34,9 @@ function getQueryClient () {
     browserClient = makeQueryClient()
   }
 
-  window.__TANSTACK_QUERY_CLIENT__ = browserClient
+  if (clientENV.NEXT_PUBLIC_NODE_ENV == 'development') {
+    window.__TANSTACK_QUERY_CLIENT__ = browserClient
+  }
 
   return browserClient;
 }

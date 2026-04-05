@@ -1,14 +1,14 @@
 import { z } from 'zod';
 
 const serverEnvSchema = z.object({
-  NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
+  NODE_ENV: z.enum(['development', 'production', 'test']).default('production'),
 });
 
 // Define schema for client-side variables
 const clientEnvSchema = z.object({
   NEXT_PUBLIC_HLDS_FRONT_API_URL: z.url(),
   NEXT_PUBLIC_HLDS_FRONT_GRAPHQL_PATH: z.string().optional(),
-  NEXT_PUBLIC_NODE_ENV: z.enum(['development', 'production', 'test']).default('development'),
+  NEXT_PUBLIC_NODE_ENV: z.enum(['development', 'production', 'test']).default('production'),
 });
 
 // Validate server environment

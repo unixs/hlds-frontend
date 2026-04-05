@@ -1,0 +1,6 @@
+query {
+  servers {
+    name
+    alive
+  }
+}

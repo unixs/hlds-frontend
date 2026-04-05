@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
-import MainNavigation from "@/app/components/MainMenu";
+import MainNavigation from "@/components/MainMenu";
+import ServersList from "@/components/ServersList";
 
 export default function Home() {
   return (
@@ -7,13 +8,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1>Fufel`s HLDS server.</h1>
         <MainNavigation />
-        <section aria-label="servers list">
-          <ul>
-            <li>Private server - <code>127.0.0.1:27015</code></li>
-            <li>Public default server - <code>127.0.0.1:27016</code></li>
-            <li>Public rats server - <code>127.0.0.1:27017</code></li>
-          </ul>
-        </section>
+        <ServersList />
       </main>
     </div>
   );

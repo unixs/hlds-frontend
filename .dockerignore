@@ -29,6 +29,6 @@ eslint.config.mjs
 # Other
 Rakefile
 Dockerfile
-graphql.config.yml
+src/lib/api/frontend/graphql.config.yml
 next-env.d.ts
 next.config.ts

@@ -21,6 +21,7 @@
     "paths": {
       "@/*": ["./src/*"],
       "@/graphql/*": ["./graphql/*"],
+      "@api/*": ["./src/lib/api/*"],
     }
   },
   "include": [

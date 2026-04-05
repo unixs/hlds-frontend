@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const MENU = [
   {
-    path: 'home',
+    path: '',
     title: 'Home',
   },
   {
@@ -17,6 +17,7 @@ const MENU = [
 export function MainMenu() {
   return (
     <ul>
+      <h2>Menu</h2>
       {MENU.map((m) => (
         <li key={m.path}>
           <Link href={`/${m.path}`}>{m.title}</Link>
